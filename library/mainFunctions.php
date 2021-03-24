@@ -66,16 +66,16 @@
         $apiKey = "6357d254ee33ae430188bd08261117d1";
         $cityName = trim($nameCity);
         $apiUrl = "api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&appid=" . $apiKey;
-        $crequest = curl_init();
-        curl_setopt($crequest, CURLOPT_HEADER, 0);
-        curl_setopt($crequest, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($crequest, CURLOPT_URL, $apiUrl);
-        curl_setopt($crequest, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($crequest, CURLOPT_VERBOSE, 0);
-        curl_setopt($crequest, CURLOPT_SSL_VERIFYPEER, false);
-        $response = curl_exec($crequest);
-        curl_close($crequest);
-        $data = json_decode($response);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, $apiUrl);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_VERBOSE, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        $head = curl_exec($ch);
+        curl_close($ch);
+        $data = json_decode($head);
         
         return $data;
 }
