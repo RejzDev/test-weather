@@ -11,6 +11,6 @@
 
         </div>
 
-        <input type="submit" class="btn btn-success" value="Найти">
+        <input type="submit" class="btn btn-primary " value="Найти">
     </form>
     </div>
