@@ -65,7 +65,7 @@
     function curlWeather($nameCity){
         $apiKey = "6357d254ee33ae430188bd08261117d1";
         $cityName = trim($nameCity);
-        $apiUrl = "api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&appid=" . $apiKey;
+        $apiUrl = "api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&appid=" . $apiKey . "&units=metric";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

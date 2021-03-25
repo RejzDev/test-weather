@@ -1,8 +1,8 @@
 </div>{*centerColumn*}
 
 <div id="footer">
-    footer
-</div>
 
+</div>
+</div>
 </body>
 </html>

@@ -1,17 +1,19 @@
 <?php
+    include_once "../models/SearchModel.php";
+
 function indexAction($smarty){
     
-   $nameCity = $_POST['q'];
+   $nameCity = $_GET['nameCity'];
    if (! $nameCity){
        redirect("/");
        return;
    }
    //$cityName = 'London';
-   $rs = curlWeather($nameCity);
-   $cityName = 'London';
-   $smarty->assign('pageTitle', 'City');
-   $smarty->assign('rs', $rs);
-   d($rs);
+   $rsWeather = getWeatherDate($nameCity);
+   
+   $smarty->assign('pageTitle', $nameCity);
+   $smarty->assign('rsWeather', $rsWeather);
+   //d($rsWeather);
   
    loadTemplate($smarty, 'header');
    loadTemplate($smarty, 'search');

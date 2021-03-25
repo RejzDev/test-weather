@@ -1,7 +1,16 @@
     {* Шаблон главнай страници *}
 
 
-    <form action="/search/" method="POST">
-        <input type="search" name="q" id="q" placeholder="Введіть Місто">
-        <input type="submit" value="Найти">
+
+
+    <div class="container">
+    <form action="/search/" method="GET">
+        <div class="mb-3">
+
+            <input type="search" class="form-control" name="nameCity" id="nameCity" placeholder="Введіть назву міста">
+
+        </div>
+
+        <input type="submit" class="btn btn-success" value="Найти">
     </form>
+    </div>

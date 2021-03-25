@@ -4,7 +4,7 @@
      * Контролер главной страници
      */
     
-    include_once '../library/mainFunctions.php';
+   // include_once '../library/mainFunctions.php';
     
     function testAction() {
         echo "IndexController.php > testAction";
@@ -16,13 +16,11 @@
      */
     function indexAction($smarty) {
     
-    $cityName = 'London';
     
-    $rsWeather = curlWeather($cityName);
     
     $smarty->assign('pageTitle', 'Главная страница');
-    $smarty->assign('rsWeather', $rsWeather);
-    //  d($rsWeather);
+    
+   
     
     
     loadTemplate($smarty, 'header');

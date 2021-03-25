@@ -1,0 +1,17 @@
+
+
+body {
+    background-image: url(../../../images/bg2.jpg); /* Путь к фоновому изображению */
+    background-color: #c7b39b; /* Цвет фона */
+    background-size: 100% 100%;
+}
+
+.h1-color{
+    font-size: 100px;
+    color: #fff;
+    border-color: black;
+
+}
+.btn-color{
+    background-color: #9A3ED5;
+}
