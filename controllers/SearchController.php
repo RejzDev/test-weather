@@ -12,12 +12,12 @@ function indexAction($smarty){
     
    
    $rsWeather = getWeatherDate($nameCity);
-  $date = $rsWeather->list[0]->dt_txt;
+  //$date = $rsWeather->list[0]->dt_txt;
   //foreach ($rsWeather as $item){
   //    $gg = $item['name'];
   //}
     
-    $dates = date("l", strtotime($date));
+   // $dates = date("l", strtotime($date));
     
     // Перевод
    // $days = [
@@ -36,7 +36,7 @@ function indexAction($smarty){
    
    $smarty->assign('pageTitle', $nameCity);
    $smarty->assign('rsWeather', $rsWeather);
-   //d($gg);
+   //d($rsWeather);
   
    loadTemplate($smarty, 'header');
    loadTemplate($smarty, 'search');
