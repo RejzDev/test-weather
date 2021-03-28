@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2021-03-25 15:01:55
+<?php /* Smarty version Smarty-3.1.6, created on 2021-03-28 21:37:06
          compiled from "../views/default\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25225605c3f4ea80077-54974844%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9797888b337e03f99b06385b60a372bbb52d5e02' => 
     array (
       0 => '../views/default\\header.tpl',
-      1 => 1616673714,
+      1 => 1616956625,
       2 => 'file',
     ),
   ),
@@ -30,9 +30,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
 </title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['TemplateWebPath']->value;?>
+         <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['TemplateWebPath']->value;?>
 css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="../js/js.js"></script>
            </head>

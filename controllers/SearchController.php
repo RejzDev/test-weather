@@ -36,7 +36,7 @@ function indexAction($smarty){
    
    $smarty->assign('pageTitle', $nameCity);
    $smarty->assign('rsWeather', $rsWeather);
-   //d($rsWeather);
+   d($rsWeather);
   
    loadTemplate($smarty, 'header');
    loadTemplate($smarty, 'search');
