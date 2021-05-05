@@ -8,36 +8,37 @@ function indexAction($smarty){
        redirect("/");
        return;
    }
-   //$cityName = 'London';
     
    
    $rsWeather = getWeatherDate($nameCity);
-  //$date = $rsWeather->list[0]->dt_txt;
-  //foreach ($rsWeather as $item){
-  //    $gg = $item['name'];
-  //}
+   //d($rsWeather);
+  // $f = count($rsWeather->list);
+  //d($f);
+    $dates = array();
+    $datesCnt = count($rsWeather->list);
+    for($i = 0; $i < $datesCnt; $i++){
+        $dates[] = [$rsWeather->list[$i]->dt_txt];
+    }
+    //d($date);
+    //$dates = [$rsWeather->list[0]->dt_txt,$rsWeather->list[9]->dt_txt];
     
-   // $dates = date("l", strtotime($date));
+    $days = [
+        'Воскресенье', 'Понедельник', 'Вторник', 'Среда',
+        'Четверг', 'Пятница', 'Суббота'
+    ];
     
-    // Перевод
-   // $days = [
-   //     'Воскресенье', 'Понедельник', 'Вторник', 'Среда',
-   //     'Четверг', 'Пятница', 'Суббота'
-   // ];
-   //
-   // foreach($dates as $d){
-   //     $dayOfWeek = array(
-   //         'date' => $d,
-   //         'dayOfWeek' => date("w", strtotime($d) )
-   //     );
-   // }
-  //$date = date('l', $date);
- // d($dates);
-   
+  //  foreach($dates as $d){
+  //      $dayOfWeek[] = array(
+  //          'date' => $d,
+  //          'dayOfWeek' => $days[ date("w", strtotime($d) )]
+  //      );
+  //  }
+   // d($dayOfWeek);
+  
    $smarty->assign('pageTitle', $nameCity);
    $smarty->assign('rsWeather', $rsWeather);
-   d($rsWeather);
-  
+   $smarty->assign('datesCnt', $datesCnt);
+
    loadTemplate($smarty, 'header');
    loadTemplate($smarty, 'search');
    loadTemplate($smarty, 'footer');

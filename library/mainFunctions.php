@@ -1,14 +1,14 @@
 <?php
 
      /**
-     * Основние функции
+     * Main functions
      */
 
     /**
-     * Формирование запрашиваемой страници
+     * Formation of the requested page
      *
-     * @param string $controllerName название контролера
-     * @param string $actionName название функции оброботки страницы
+     * @param string $controllerName Controller name
+     * @param string $actionName name of the page processing function
      */
     function loadPage($smarty, $controllerName, $actionName = 'index') {
         include_once PathPrefix . $controllerName . PathPostfix;
@@ -17,20 +17,17 @@
     }
 
     /**
-     * Загрузка шаблона
+     * Download tamplate
      *
-     * @param object $smarty обект шаблонизатора
-     * @param string $templateNeme название файла шаблона
+     * @param object $smarty object Smarty
+     * @param string $templateNeme  template fle name
      */
     function loadTemplate($smarty, $templateNeme) {
         $smarty->display( $templateNeme . TemplatePostfix);
     }
 
 /**
- * Функция откладки. Остановлевает роботу програми виводя значение переменой
- * $value
- *
- * @param variant $value переменая для вивода е на страницу
+ * Debag
  *
  */
     function d ($value = null, $die = 1) {

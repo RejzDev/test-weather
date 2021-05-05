@@ -1,12 +1,10 @@
 <?php
-    /** Файл для роботи з даними Weather*/
+    /** Weather data file*/
 
 function getWeatherDate($nameCity){
     $nameCity = htmlspecialchars($nameCity);
-    
+
     $rs = curlWeather($nameCity);
-    
-    
     
     return $rs;
 }
