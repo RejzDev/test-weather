@@ -15,29 +15,38 @@ function indexAction($smarty){
   // $f = count($rsWeather->list);
   //d($f);
     $dates = array();
+    $dataWeather = array();
     $datesCnt = count($rsWeather->list);
     for($i = 0; $i < $datesCnt; $i++){
-        $dates[] = [$rsWeather->list[$i]->dt_txt];
+       
+        $dates[] = $rsWeather->list[$i]->dt_txt;
     }
-    //d($date);
-    //$dates = [$rsWeather->list[0]->dt_txt,$rsWeather->list[9]->dt_txt];
-    
+ // d($dataWeather);
+  
     $days = [
-        'Воскресенье', 'Понедельник', 'Вторник', 'Среда',
-        'Четверг', 'Пятница', 'Суббота'
+        'Неділя', 'Понеділок', 'Вівторок', 'Середа',
+        'Четвер', "П'ятница", 'Субота'
     ];
-    
-  //  foreach($dates as $d){
-  //      $dayOfWeek[] = array(
-  //          'date' => $d,
-  //          'dayOfWeek' => $days[ date("w", strtotime($d) )]
-  //      );
-  //  }
-   // d($dayOfWeek);
+    $months = [
+        "1" => 'Січень',  "2" => 'Лютий',  "3" => 'Березень',  "4" => 'Квітень',
+        "5" => 'Травень',  "6" => 'Червень',  "7" => 'Липень',  "8" => 'Серпень',
+        "9" => 'Вересень',  "10" => 'Жовтень',  "11" => 'Листопад',
+        "12" => 'Грудень'
+    ];
+    $dayOfWeek = array();
+         foreach($dates as $d){
+             $dayOfWeek[] =  [
+                 'date' => $d,
+                 'dayOfWeek' => $days[ date("w", strtotime($d) )],
+                 'months' => $months[ date("n", strtotime($d) )]
+             ];
+         }
+    //d($dayOfWeek);
+  //  echo $dayOfWeek[0]
   
    $smarty->assign('pageTitle', $nameCity);
    $smarty->assign('rsWeather', $rsWeather);
-   $smarty->assign('datesCnt', $datesCnt);
+   $smarty->assign('dayOfWeek', $dayOfWeek);
 
    loadTemplate($smarty, 'header');
    loadTemplate($smarty, 'search');
