@@ -8,14 +8,18 @@
 
     //> Used template
     $template = 'default';
-    
+    $templateAdmin = 'admin';
     
     // paths to template files (*tpl)
     define('TemplatePrefix', "../views/$template/");
     define('TemplatePostfix', '.tpl');
     
+    define('TemplateAdminPrefix', "../views/$templateAdmin/");
+    define('TemplateAdminPostfix', '.tpl');
+    
     // paths to template files in web space
     define ('TemplateWebPath', "/templates/$template/");
+    define ('TemplateAdminWebPath', "/templates/$templateAdmin/");
     //<
     
     //> initialization template Smarty

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2021-05-06 16:02:32
+<?php /* Smarty version Smarty-3.1.6, created on 2021-05-09 22:25:52
          compiled from "../views/default\search.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25230605c3f4eacf916-24115661%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '078d4c97c557e977f4441293a639a7266a26497c' => 
     array (
       0 => '../views/default\\search.tpl',
-      1 => 1620306147,
+      1 => 1620588349,
       2 => 'file',
     ),
   ),
@@ -94,7 +94,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                    <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                    <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                     <td><img src='http://openweathermap.org/img/w/<?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->weather[0]->icon;?>
 .png' alt='Icon depicting current weather.'></td>
                     <?php }?>
@@ -107,7 +107,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo sprintf("%d",$_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->temp);?>
 </td>
                         <?php }?>
@@ -119,7 +119,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->wind->speed;?>
 </td>
                         <?php }?>
@@ -132,7 +132,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->grnd_level*0.75;?>
 </td>
                         <?php }?>
@@ -144,7 +144,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->humidity;?>
 </td>
                         <?php }?>
@@ -157,7 +157,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[0]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[0]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->pop;?>
 </td>
                         <?php }?>
@@ -178,7 +178,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
 
 
                             <th scope="col"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%H:%M");?>
@@ -194,7 +194,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><img src='http://openweathermap.org/img/w/<?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->weather[0]->icon;?>
 .png' alt='Icon depicting current weather.'></td>
                         <?php }?>
@@ -207,7 +207,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo sprintf("%d",$_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->temp);?>
 </td>
                         <?php }?>
@@ -219,7 +219,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->wind->speed;?>
 </td>
                         <?php }?>
@@ -232,7 +232,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->grnd_level*0.75;?>
 </td>
                         <?php }?>
@@ -244,7 +244,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->humidity;?>
 </td>
                         <?php }?>
@@ -257,7 +257,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[8]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[8]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->pop;?>
 </td>
                         <?php }?>
@@ -278,7 +278,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
 
                             <th scope="col"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%H:%M");?>
 </th>
@@ -293,7 +293,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><img src='http://openweathermap.org/img/w/<?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->weather[0]->icon;?>
 .png' alt='Icon depicting current weather.'></td>
                         <?php }?>
@@ -306,7 +306,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo sprintf("%d",$_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->temp);?>
 </td>
                         <?php }?>
@@ -318,7 +318,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->wind->speed;?>
 </td>
                         <?php }?>
@@ -331,7 +331,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->grnd_level*0.75;?>
 </td>
                         <?php }?>
@@ -343,7 +343,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->humidity;?>
 </td>
                         <?php }?>
@@ -356,7 +356,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[17]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[17]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->pop;?>
 </td>
                         <?php }?>
@@ -377,7 +377,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
 
 
                             <th scope="col"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%H:%M");?>
@@ -393,7 +393,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><img src='http://openweathermap.org/img/w/<?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->weather[0]->icon;?>
 .png' alt='Icon depicting current weather.'></td>
                         <?php }?>
@@ -406,7 +406,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo sprintf("%d",$_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->temp);?>
 </td>
                         <?php }?>
@@ -418,7 +418,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->wind->speed;?>
 </td>
                         <?php }?>
@@ -431,7 +431,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->grnd_level*0.75;?>
 </td>
                         <?php }?>
@@ -443,7 +443,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->humidity;?>
 </td>
                         <?php }?>
@@ -456,7 +456,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[25]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[25]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->pop;?>
 </td>
                         <?php }?>
@@ -477,7 +477,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
 
 
                             <th scope="col"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%H:%M");?>
@@ -493,7 +493,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><img src='http://openweathermap.org/img/w/<?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->weather[0]->icon;?>
 .png' alt='Icon depicting current weather.'></td>
                         <?php }?>
@@ -506,7 +506,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo sprintf("%d",$_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->temp);?>
 </td>
                         <?php }?>
@@ -518,7 +518,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->wind->speed;?>
 </td>
                         <?php }?>
@@ -531,7 +531,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->grnd_level*0.75;?>
 </td>
                         <?php }?>
@@ -543,7 +543,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->main->humidity;?>
 </td>
                         <?php }?>
@@ -556,7 +556,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 if ($_smarty_tpl->tpl_vars['i']->total > 0){
 for ($_smarty_tpl->tpl_vars['i']->value = 0, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++){
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
-                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['dayOfWeek']->value[33]['date'],"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
+                        <?php if (smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[33]->dt_txt,"%d")==smarty_modifier_date_format($_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->dt_txt,"%d")){?>
                             <td><?php echo $_smarty_tpl->tpl_vars['rsWeather']->value->list[$_smarty_tpl->tpl_vars['i']->value]->pop;?>
 </td>
                         <?php }?>
